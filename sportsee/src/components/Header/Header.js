@@ -1,26 +1,30 @@
-// Import CSS
-import './Header.css'
-
-//Import logo
+import React from 'react'
 import Logo from '../../assets/icons/logo.svg'
+import { Link } from 'react-router-dom'
+import './header.css'
 
 /**
- * It returns React Component that displays the header.
- * @returns A React component
+ * @component - Returns the header with a navbar
+ * @returns Header Component
  */
-function Header() {
+
+const Header = () => {
   return (
-    <header>
-      <img id="header-logo" src={Logo} alt="Logo SportSee" />
-      <nav id="header-menu">
-        <ul>
-          <li>Accueil</li>
-          <li>Profil</li>
-          <li>Réglage</li>
-          <li>Communauté</li>
-        </ul>
-      </nav>
-    </header>
+    <div className="navbar">
+      <img src={Logo} alt="Logo SportSee" className="navbar__logo" />
+      <Link className="navbar__link" to="/">
+        Accueil
+      </Link>
+      <Link className="navbar__link" to="/profil">
+        Profil
+      </Link>
+      <Link className="navbar__link" to="/reglages">
+        Réglage
+      </Link>
+      <Link className="navbar__link" to="/communaute">
+        Communauté
+      </Link>
+    </div>
   )
 }
 

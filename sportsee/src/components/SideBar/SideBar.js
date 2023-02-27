@@ -1,4 +1,5 @@
 // Import CSS and icons
+import React from 'react'
 import '../SideBar/SideBar.css'
 import { Link } from 'react-router-dom'
 import Yoga from '../../assets/icons/iconMeditation.svg'
@@ -14,16 +15,16 @@ function SideBar() {
   return (
     <aside className="sidebar">
       <nav>
-        <Link to="/yoga">
+        <Link to="#">
           <img src={Yoga} alt="Icon Yoga" />
         </Link>
-        <Link to="/nage">
+        <Link to="#">
           <img src={Swim} alt="Icon Nage" />
         </Link>
-        <Link to="/velo">
+        <Link to="#">
           <img src={Bike} alt="Icon Vélo" />
         </Link>
-        <Link to="/musculation">
+        <Link to="#">
           <img src={Fitness} alt="Icon Musculation" />
         </Link>
       </nav>

@@ -27,3 +27,4 @@
 ### Installing and launching the front-end
 - Clone the [front-end repository](https://github.com/AlexandreSz/P12_Szumiel_Alexandre)
 - Install the dependencies with `npm install`
+- Launch the front-end with `npm start`

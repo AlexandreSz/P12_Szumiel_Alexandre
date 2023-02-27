@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../assets/icons/logo.svg'
 import { Link } from 'react-router-dom'
-import './header.css'
+import './Header.css'
 
 /**
  * @component - Returns the header with a navbar
